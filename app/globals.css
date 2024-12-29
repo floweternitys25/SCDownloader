@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Глобальные стили для body */
+body {
+  @apply m-0 p-0 box-border flex justify-center items-center h-screen bg-gradient-to-r from-blue-50 to-indigo-100 font-sans;
+}
+
+/* Контейнер */
+.container {
+  @apply w-full max-w-lg bg-white shadow-lg rounded-lg p-6 text-center;
+}
+
+/* Заголовок */
+h1 {
+  @apply text-2xl font-bold text-gray-800 mb-6;
+}
+
+/* Текстовое поле */
+textarea {
+  @apply w-full h-24 p-3 border border-gray-300 rounded-lg text-gray-800 focus:outline-none focus:ring focus:ring-indigo-300 resize-none;
+}
+
+/* Кнопка */
+button {
+  @apply w-full py-3 mt-4 bg-indigo-500 text-white font-medium rounded-lg transition duration-300 hover:bg-indigo-600 disabled:bg-gray-300 disabled:cursor-not-allowed;
+}

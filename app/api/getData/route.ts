@@ -13,7 +13,7 @@ export async function GET(request: Request): Promise<Response> {
     }
     const browser = await puppeteer.launch({ executablePath: path.resolve(
         process.cwd(),
-        '.cache/puppeteer/chrome/linux-131.0.6778.204/chrome-linux64/chrome'
+        '.cache/puppeteer/chrome/win64-131.0.6778.204/chrome-win64/chrome.exe'
     ), headless: true });
     const page = await browser.newPage();
     let urlM3u8: string | null = null;
